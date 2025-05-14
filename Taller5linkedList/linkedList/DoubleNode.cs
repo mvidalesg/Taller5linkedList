@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace DoubleList;
 
-namespace linkedList
+public class DoubleNode<T>
 {
-    internal class DoubleNode
+    public DoubleNode(T data)
     {
+        Data = data;
+        Prev = null;
+        Next = null;
     }
+    public DoubleNode<T>? Prev { get; set; }
+    public T? Data { get; set; }
+    public DoubleNode<T>? Next { get; set; }
+
+
 }
